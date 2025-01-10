@@ -1,10 +1,10 @@
-const PESO = document.getElementById("peso");
-const ALTURA = document.getElementById("altura");
-const BOTAO = document.getElementById("botao");
-const RESPOSTA = document.getElementById('resposta');
+const inputPeso = document.querySelector("#inputPeso");
+const inputAltura = document.querySelector("#inputAltura");
+const btnCalcularImc = document.querySelector("#btnCalcularImc");
+const outputMessage = document.querySelector("#outputMessage");
 
-function calculaImc(peso, altura) {
-    return peso / (altura * altura);
+function calculaImc(inputPeso, inputAltura) {
+    return inputPeso / (inputAltura * inputAltura);
 }
 
 function classificaImc(imc) {
@@ -27,10 +27,10 @@ function classificaImc(imc) {
     return imcClass;
 }
 
-BOTAO.onclick = function() {
+btnCalcularImc.onclick = function() {
 
-    let peso = PESO.value.replaceAll(",", ".");
-    let altura = ALTURA.value.replaceAll(",", ".");
+    let peso = inputPeso.value.replaceAll(",", ".");
+    let altura = inputAltura.value.replaceAll(",", ".");
 
     peso = Number(peso);
     altura = Number(altura);
@@ -38,5 +38,5 @@ BOTAO.onclick = function() {
     let imc = calculaImc(peso, altura);
     let imcClass = classificaImc(imc);
    
-    RESPOSTA.textContent = `Seu IMC é: ${imc} - ${imcClass}`;
+    outputMessage.textContent = `Seu IMC é: ${imc} - ${imcClass}`;
 }
