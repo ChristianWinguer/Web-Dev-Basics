@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing game</title>
+    <link rel="styleSheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Number Guessing Game</h1>
+    <div>
+      <label for="oneTen">Number between 1 and 10</label>
+      <input type="radio" name="config" id="oneTen" />
+      <label for="oneTwenty">Number between 1 and 20</label>
+      <input type="radio" name="config" id="oneTwenty" />
+      <label for="oneHundred">Number between 1 and 100</label>
+      <input type="radio" name="config" id="oneHundred" />
+    </div>
+    <button id="btnGenerate">Generate a random number</button>
+    <button id="btnRevealing">Revealing the number</button>
+    
+
+    <input id="inGuess"/>
+    <button id="btnGuess">Guess the number</button>
+    <p id="response"></p>
+    
+
+    <script src="index.js"></script>
+  </body>
+</html>

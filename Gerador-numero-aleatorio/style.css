@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+button {
+    color: white;
+    background-color: rgb(197, 36, 25);
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+#rolled {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    margin-top: 10px;
+    text-align: center;
+}
