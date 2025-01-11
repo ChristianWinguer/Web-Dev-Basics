@@ -1,21 +1,28 @@
-let num = 0;
+const outputContagem = document.querySelector("#outputContagem");
+const btnDiminuirContagem = document.querySelector("#btnDiminuirContagem");
+const btnResetContagem = document.querySelector("#btnResetContagem");
+const btnAumentarContagem = document.querySelector("#btnAumentarContagem");
 
-num = document.getElementById("numero").textContent = `${num}`
+let contagem = 0;
+outputContagem.textContent = `${contagem}`;
 
-document.getElementById("botaoMenos").onclick = function() {
-    num = Number(num);
-    num -= 1;
-    num = document.getElementById("numero").textContent = `${num}`
-};
+btnDiminuirContagem.addEventListener("click", function(event) {
+    event.preventDefault();
 
-document.getElementById("botaoReset").onclick = function() {
-    num = Number(num);
-    num = 0;
-    num = document.getElementById("numero").textContent = `${num}`
-}
+    contagem -= 1;
+    outputContagem.textContent = `${contagem}`;
+});
 
-document.getElementById("botaoMais").onclick = function() {
-    num = Number(num);
-    num += 1;
-    num = document.getElementById("numero").textContent = `${num}`
-}
+btnResetContagem.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    contagem = 0;
+    outputContagem.textContent = `${contagem}`
+});
+
+btnAumentarContagem.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    contagem += 1;
+    outputContagem.textContent = `${contagem}`;
+});
