@@ -1,25 +1,23 @@
-const BTNSUBMIT = document.getElementById("btnSubmit");
-const NUMBER = document.getElementById("number");
-const RESULT = document.getElementById("result");
+const btnCalculaParImpar = document.querySelector("#btnCalculaParImpar");
+const outputResultado = document.querySelector("#outputResultado");
+const inputNumero = document.querySelector("#inputNumero");
 
-function isEven(number) {
-    
-    let result;
+function isEven(numero) {
+    let resultado;
 
-    if (number % 2 === 0) {
-        result = "This number is Even";
-        return result;
-    }else if (number % 2 !== 0) {
-        result = "This number is Odd";
-        return result;
+    if (numero % 2 === 0) {
+        resultado = `O número ${numero} é Par`;
+        return resultado;
+    }else if (numero % 2 !== 0) {
+        resultado = `O número ${numero} é Ímpar`;
+        return resultado;
     } else {
-        result = "This is not a valid number!!!";
-        return result;
+        resultado = `${numero} não é válido`;
+        return resultado;
     }
-
 };
 
-BTNSUBMIT.onclick = function () {
-    let result = isEven(NUMBER.value);
-    RESULT.textContent = `${result}`;
+btnCalculaParImpar.onclick = function () {
+    let resultado = isEven(inputNumero.value);
+    outputResultado.textContent = `${resultado}`;
 };
