@@ -1,30 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dice Roller</title>
+    <title>Jogar Dados</title>
     <link rel="styleSheet" href="style.css">
 </head>
 <body>
 
-    <h1>Dice Roller</h1>
-    <label id="rolled"></label>
-    <div>
-        <label for="d4">D4</label>
-        <input type="radio" name="diceOptions" id="d4">
-        <label for="d6">D6</label>
-        <input type="radio" name="diceOptions" id="d6">
-        <label for="d8">D8</label>
-        <input type="radio" name="diceOptions" id="d8">
-        <label for="d10">D10</label>
-        <input type="radio" name="diceOptions" id="d10">
-        <label for="d20">D20</label>
-        <input type="radio" name="diceOptions" id="d20">
-    </div>
-    <div>
-        <button id="btnRoll">Roll Dice</button>
-    </div> 
+    <main>
+        <h1>Jogar dados</h1>
+
+        <input id="inputNumeroDadosJogados" type="number" placeholder="Quantos dados você deseja jogar?"/>
+        <button id="btnJogarDados">Jogar Dados</button>
+        <p id="outputMessagem"></p>
+
+    </main>
 
     <script src="index.js"></script>
 </body>
