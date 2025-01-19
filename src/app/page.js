@@ -1,5 +1,4 @@
 import styles from "./page.module.css";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -18,11 +17,67 @@ export default function Home() {
       </section>
       <section className={styles.techStackSection}>
       <img src="/icons/html-icon.svg" alt="HTML Icon" width={90} height={90} />
-      <img src="/icons/css-icon.svg" alt="HTML Icon" width={90} height={90} />
-      <img src="/icons/javascript-icon.svg" alt="HTML Icon" width={90} height={90} />
-      <img src="/icons/git-icon.svg" alt="HTML Icon" width={90} height={90} />
-      <img src="/icons/nextJS-icon.svg" alt="HTML Icon" width={90} height={90} />
+      <img src="/icons/css-icon.svg" alt="CSS Icon" width={90} height={90} />
+      <img src="/icons/javascript-icon.svg" alt="JavaScript Icon" width={90} height={90} />
+      <img src="/icons/git-icon.svg" alt="Git Icon" width={90} height={90} />
+      <img src="/icons/nextJS-icon.svg" alt="NextJS Icon" width={90} height={90} />
       </section>
+      <main className={styles.sectionExercices}>
+        <a href="/" className={styles.exerciceCard}>
+          <div>
+            <img src="/images/template.png" alt="Exercice Thumbnail" width={500} height={250} />
+          </div>
+          <div className={styles.exerciceCardDescription}>
+           <h2>Password Generator</h2>
+           <p>Pequena descrição</p>
+          </div>
+        </a>
+        <a href="/" className={styles.exerciceCard}>
+          <div>
+            <img src="/images/template.png" alt="Exercice Thumbnail" width={500} height={250} />
+          </div>
+          <div className={styles.exerciceCardDescription}>
+           <h2>Password Generator</h2>
+           <p>Pequena descrição</p>
+          </div>
+        </a>
+        <a href="/" className={styles.exerciceCard}>
+          <div>
+            <img src="/images/template.png" alt="Exercice Thumbnail" width={500} height={250} />
+          </div>
+          <div className={styles.exerciceCardDescription}>
+           <h2>Password Generator</h2>
+           <p>Pequena descrição</p>
+          </div>
+        </a>
+        <a href="/" className={styles.exerciceCard}>
+          <div>
+            <img src="/images/template.png" alt="Exercice Thumbnail" width={500} height={250} />
+          </div>
+          <div className={styles.exerciceCardDescription}>
+           <h2>Password Generator</h2>
+           <p>Pequena descrição</p>
+          </div>
+        </a>
+        <a href="/" className={styles.exerciceCard}>
+          <div>
+            <img src="/images/template.png" alt="Exercice Thumbnail" width={500} height={250} />
+          </div>
+          <div className={styles.exerciceCardDescription}>
+           <h2>Password Generator</h2>
+           <p>Pequena descrição</p>
+          </div>
+        </a>
+        <a href="/" className={styles.exerciceCard}>
+          <div>
+            <img src="/images/template.png" alt="Exercice Thumbnail" width={500} height={250} />
+          </div>
+          <div className={styles.exerciceCardDescription}>
+           <h2>Password Generator</h2>
+           <p>Pequena descrição</p>
+          </div>
+        </a>
+      </main>
     </div>
   );
 }
